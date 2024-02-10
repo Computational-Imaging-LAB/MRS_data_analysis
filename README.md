@@ -1,7 +1,11 @@
 # MRS_statistical_analysis
-This repository provides a collection of scripts designed to streamline the process of reading, preparing, and conducting statistical tests on LCModel results.
+This repository contains a suite of scripts aimed at automating LCModel analysis of MRS data acquired with a Siemens MR scanner. It also includes tools for reading, preparing, and conducting statistical tests on LCModel results, streamlining the entire process.
+
 
 ## Components:
+
+## MRS_Analysis_WaterScaling.py
+This script automates MRS data analysis using LCModel. It reads MRS data and its corresponding water reference from multiple patients stored in separate directories, converts the data to LCModel-compatible format, performs the analysis, and saves the results in a folder named 'Output' within each patient's directory.
 
 ### ReadingLCModelMetaboliteQuantification.m
 This script gathers LCModel output from each patient folder and lists it in an Excel file. To start, please define a PatientListandTags.mat file containing Patient IDs to be included. The script extracts the quantification outputs from each patient folder and produces an Excel sheet where each row will represent a patient with a corresponding patient ID.
