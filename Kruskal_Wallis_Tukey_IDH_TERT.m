@@ -9,7 +9,7 @@
 % Banu Sacli-Bilmez
 % Institute of Biomedical Engineering, Bogazici University, Istanbul
 
-function Kruskal_Wallis_Tukey_IDH_TERT(inputexcel)
+function Kruskal_Wallis_Tukey_IDH_TERT(inputexcel, outputexcel)
 
 [status,sheets] = xlsfinfo(inputexcel);
 
@@ -47,7 +47,7 @@ a(1)=[]; num(a,:)=[];
         Total=[Total T];
     end
     Total(:,1)=[];
-    writetable(Total,'C:\Users\ASUS\Desktop\Workspace\Glioma\ComparisionWithKruskalWallis_Ratio.xlsx','Sheet', string(sheets(n)),'Range','A1');
+    writetable(Total, outputexcel,'Sheet', string(sheets(n)),'Range','A1');
 
 end
 end
