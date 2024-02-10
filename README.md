@@ -19,4 +19,4 @@ This script conducts Mann-Whitney U tests between two groups, specified by `grou
 ### Kruskal_Wallis_Tukey_IDH_TERT.m
 This script performs Kruskal-Wallis tests followed by Tukey-Kramer post-hoc analysis between different groups (IDH-only, TERTp-only, Double mutant, Double negative) based on metabolite concentrations provided in the `inputexcel` Excel file. It calculates test results such as p-values and confidence intervals for pairwise group comparisons. The results are then saved in separate sheets of an Excel file.
 
-If you have any questions, suggestions, or feedback, feel free to contact us via banusacli@gmail. 
+If you have any questions, suggestions, or feedback, feel free to contact us via banusacli@gmail.com
